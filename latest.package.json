@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "theia": {
+      "frontend": {
+          "config": {
+              "applicationName": "Theia Extension",
+              "preferences": {
+                  "files.enableTrash": false
+              }
+          }
+      },
+      "generator": {
+        "config": {
+          "preloadTemplate": "./my-extension/preload.html"
+        }
+      }
+  },
+  "dependencies": {
+      "@theia/core": "latest",
+      "@theia/editor": "latest",
+      "@theia/filesystem": "latest",
+      "@theia/monaco": "latest",
+      "@theia/process": "latest",
+      "@theia/workspace": "latest",
+      "@theia/callhierarchy": "latest",
+      "@theia/debug": "latest",
+      "@theia/editor-preview": "latest",
+      "@theia/file-search": "latest",
+      "@theia/getting-started": "latest",
+      "@theia/git": "latest",
+      "@theia/markers": "latest",
+      "@theia/messages": "latest",
+      "@theia/mini-browser": "latest",
+      "@theia/navigator": "latest",
+      "@theia/outline-view": "latest",
+      "@theia/plugin": "latest",
+      "@theia/plugin-ext": "latest",
+      "@theia/plugin-ext-vscode": "latest",
+      "@theia/preferences": "latest",
+      "@theia/preview": "latest",
+      "@theia/search-in-workspace": "latest",
+      "@theia/terminal": "latest",
+      "@theia/vsx-registry": "latest",
+      "my-extension": "./my-extension"
+  },
+  "devDependencies": {
+      "@theia/cli": "latest"
+  },
+  "scripts": {
+      "preinstall": "node-gyp install"
+  }
+}
